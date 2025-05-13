@@ -1,0 +1,13 @@
+_target_: tsppp.trainers.cprm_trainer.CPRMTrainer
+_convert_: all
+train_batch_size: 32
+eval_batch_size: 4 # how many images to sample during evaluation
+num_epochs: 300
+gradient_accumulation_steps: 1
+learning_rate: 1e-3
+lr_warmup_steps: 500
+save_sample_epochs: 1
+save_model_epochs: 5
+mixed_precision: "fp16" # `no` for float32, `fp16` for automatic mixed precision
+logdir: ${..logdir}/cprm # the model name locally and on the HF Hub
+seed: 0

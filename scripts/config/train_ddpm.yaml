@@ -1,0 +1,13 @@
+seed: 0
+datadir: dataset/random
+logdir: logdir/random
+
+defaults:
+  - _self_
+  - data: ddpm
+  - trainer: ddpm
+  - unet: unet_1d_condition
+
+hydra:
+  job:
+    chdir: False

@@ -1,0 +1,30 @@
+seed: 0
+datadir: dataset/random
+num_workers: -1
+num_chunks: 100
+chunk_size: 1000
+
+
+generator:
+  _target_: tsppp.data.data_generator.DataGenerator
+  num_destinations: 10
+  dilation_factor: 5
+  max_trials: 5
+  max_valid_length: 256
+  num_skipframes: 1
+  map_creator:
+    _target_: tsppp.data.map_creator.MapCreator
+    mode: "random"
+    image_dir: None
+    map_th: 0.5
+    map_size: 128
+    num_blobs: 20
+    blob_size: 20
+  tsp_solver: 
+    _target_: tsppp.planners.tsp_solver.TSPSolver
+    graph_type: "random_3000_r"
+
+
+hydra:
+  job:
+    chdir: False

@@ -1,0 +1,4 @@
+_target_: tsppp.planners.tsp_solver.TSPSolver
+graph_type: tspdiffuser_10_5
+seed: ${..seed}
+checkpoint: ${..logdir}/ddpm/

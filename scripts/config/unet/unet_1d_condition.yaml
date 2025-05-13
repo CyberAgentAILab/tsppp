@@ -1,0 +1,14 @@
+_target_: tsppp.models.unet_1d_condition.UNet1DConditionModel
+_convert_: all
+sample_size: 256
+block_out_channels: [32, 32, 64]
+extra_in_channels: 16
+in_channels: 2
+out_channels: 2
+flip_sin_to_cos: True
+use_timestep_embedding: False
+time_embedding_type: "fourier"
+mid_block_type: "UNetMidBlock1D"
+down_block_types: ["DownBlock1DNoSkip", "DownBlock1D", "AttnDownBlock1D"]
+up_block_types: ["AttnUpBlock1D", "UpBlock1D", "UpBlock1DNoSkip"]
+image_encoder_type: "unet"

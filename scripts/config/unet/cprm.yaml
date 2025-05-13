@@ -1,0 +1,5 @@
+_target_: tsppp.models.cprm.CriticalPRMModel
+_convert_: all
+num_layers: 4
+in_channels: 4
+encoder_name: "vgg16_bn"

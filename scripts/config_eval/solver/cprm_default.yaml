@@ -1,0 +1,4 @@
+_target_: tsppp.planners.tsp_solver.TSPSolver
+graph_type: cprm_200_10
+seed: ${..seed}
+checkpoint: ${..logdir}/cprm/

@@ -1,0 +1,3 @@
+_target_: tsppp.planners.tsp_solver.TSPSolver
+seed: ${..seed}
+graph_type: "random_1000_r"

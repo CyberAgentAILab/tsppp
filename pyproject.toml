@@ -1,0 +1,32 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "tsppp"
+requires-python = ">=3.10"
+version = "0.1.0"
+dependencies = [
+    "hydra-core",
+    "tensorboardx",
+    "jupyterlab",
+    "matplotlib",
+    "tqdm",
+    "joblib",
+    "torch>=2.0.1",
+    "torchvision>=0.15.2",
+    "opencv-python>=4.8.1.78",
+    "scipy>=1.11.4",
+    "diffusers>=0.25.0",
+    "scikit-image>=0.22.0",
+    "ortools>=9.4.1874",
+    "pyarrow>=14.0.2",
+    "pandas>=2.1.4",
+    "dask[distributed]>=2023.12.1",
+    "transformers>=4.36.2",
+    "segmentation-models-pytorch>=0.3.3",
+    "numpy>=1.26.2",
+    "accelerate>=0.26.1",
+    "tabulate",
+    "pytest",
+]

@@ -1,0 +1,17 @@
+seed: 99999
+logdir: checkpoints
+resultdir: results
+datadir: dataset
+reference_stats: null
+
+num_instances: 10
+num_destinations: 10
+
+defaults:
+  - _self_
+  - map_creator: standard
+  - solver: prm_default
+
+hydra:
+  job:
+    chdir: False

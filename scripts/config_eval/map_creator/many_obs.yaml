@@ -1,0 +1,7 @@
+_target_: tsppp.data.map_creator.MapCreator
+num_blobs: 40
+blob_size: 10
+map_size: 128
+mode: "random"  # or "image" or "random"
+image_dir: None
+map_th: 0.5

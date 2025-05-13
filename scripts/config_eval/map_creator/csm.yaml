@@ -1,0 +1,5 @@
+_target_: tsppp.data.map_creator.MapCreator
+map_size: 128
+mode: "image"
+image_dir: ${..datadir}/street-png
+map_th: 0.5

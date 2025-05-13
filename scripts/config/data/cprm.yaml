@@ -1,0 +1,4 @@
+_target_: tsppp.data.dataset.CPRMDataset
+data_file: ${..datadir}/generated/random_ms128_nb20_bs20_nw10_random_3000_r_100000.db
+apply_distance_transform: True
+dilation_size: 9
